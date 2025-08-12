@@ -1,0 +1,28 @@
+[project]
+id = "royalty-nowcast-mvp"
+
+[functions]
+
+[functions.yt_pull_daily]
+verify_jwt = false
+[schedules.yt_pull_daily]
+schedule = "0 5 * * *"  # 05:00 UTC daily
+
+autostart = true
+
+[functions.update_eps]
+verify_jwt = false
+[schedules.update_eps]
+schedule = "30 4 * * 1" # Monday 04:30 UTC
+
+autostart = true
+
+[functions.forecast_week]
+verify_jwt = false
+[schedules.forecast_week]
+schedule = "45 4 * * 1" # Monday 04:45 UTC
+
+autostart = true
+
+[functions.parse_statement]
+verify_jwt = false

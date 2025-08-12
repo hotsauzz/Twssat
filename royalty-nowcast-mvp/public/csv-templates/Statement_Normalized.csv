@@ -1,0 +1,2 @@
+period_start,period_end,source,ledger,territory,id_type,id_value,units,gross_sek,fees_sek,currency
+2024-06-01,2024-07-01,distrokid,master,SE,ISRC,SEABC2400001,100000,2500,0,SEK
